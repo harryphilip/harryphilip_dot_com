@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 import django_heroku
-from .settings_secret import *
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,8 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', 'whispering-beyond-68597.herokuapp.com']
 
 # Application definition
 
@@ -72,7 +70,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'harryphilip_dot_com.wsgi.application'
 
-
+SECRET_KEY = os.path.join(BASE_DIR, 'DJANGO_SECRET_KEY')
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
