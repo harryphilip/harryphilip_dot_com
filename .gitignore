@@ -117,5 +117,5 @@ dmypy.json
 #pycharm
 .idea
 
-#secret settings
-harryphilip_dot_com/settings_secret.py
+#Tap File
+.tap

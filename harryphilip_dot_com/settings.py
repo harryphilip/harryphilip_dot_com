@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'harryphilip.apps.HarryphilipConfig',
+    'one_hundred_and_one.apps.OneHundredAndOneConfig'
 ]
 
 MIDDLEWARE = [
@@ -119,5 +120,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+NOSE_ARGS = ['--with-tap', '--tap-stream']
 
 django_heroku.settings(locals())

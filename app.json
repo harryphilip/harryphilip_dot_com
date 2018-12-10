@@ -1,6 +1,7 @@
 {
   "name": "harryphilip_dot_com",
   "scripts": {
+    "test": "python manage.py test -v 2"
   },
   "env": {
     "DJANGO_SECRET_KEY": {
